@@ -7,7 +7,7 @@ import { CurrentWeatherComponent } from './current-weather/current-weather.compo
 import {WeatherService} from './weather/weather.service'
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CitySearchComponent } from './city-search/city-search.component'
-import {MatFormFieldModule, MatInputModule} from '@angular/material'
+import { MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 @NgModule({
@@ -23,9 +23,20 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatButtonModule, 
+    MatToolbarModule, 
+    MatIconModule,
+    MatCardModule,
     BrowserAnimationsModule
   ],
   exports: [
+    BrowserModule,
+    MatButtonModule, 
+    MatToolbarModule, 
+    MatIconModule,
+    MatCardModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule
